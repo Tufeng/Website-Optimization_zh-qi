@@ -451,10 +451,32 @@ var resizePizzas = function(size) {
     //   var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
     //   document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
     // }
+<<<<<<< HEAD
+    var randomWidth = document.querySelector("#randomPizzas").offsetWidth;
+    var newwidth = (determineDx(size)*randomWidth)+"px";
+    var pizzas =document.getElementsByClassName("randomPizzaContainer");
+    for (var i=0;i<pizzas.length;i++){
+||||||| merged common ancestors
+    var randomWidth = document.querySelector("#randomPizzas".offsetWitdh);
+<<<<<<< Updated upstream
+    var newwidth = (determineDx(size)*randomWidth)+"px";
+    var pizzas =document.getElementsByClassName("randomPizzaContainer");
+    for (var i=0;i<pizzas.length;i++){
+||||||| merged common ancestors
+    var newwidth = (documentDx(size)*randomWidth)+"px";
+    var pizzas =document.querySelectorAll(".randomPizzaContainer");
+    for (var i=0；i<pizzas.length;i++){
+=======
+    var newwidth = (documentDx(size)*randomWidth)+"px";
+    var pizzas =document.querySelectorAll(".randomPizzaContainer");
+    for (var i=0；i<pizzas.length;i++){
+=======
     var randomWidth = document.querySelector("#randomPizzas".offsetWitdh);
     var newwidth = (determineDx(size)*randomWidth)+"px";
     var pizzas =document.getElementsByClassName("randomPizzaContainer");
     for (var i=0;i<pizzas.length;i++){
+>>>>>>> origin/master
+>>>>>>> Stashed changes
       pizzas[i].style.width = newwidth;
     }
   }
@@ -504,10 +526,30 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
+<<<<<<< HEAD
+  var items = document.getElementsByClassName("mover");
+  var scrollTop =  window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+  for (var i = 0;i < items.length; i++) {
+||||||| merged common ancestors
+  var items = document.querySelectorAll('.mover');
+<<<<<<< Updated upstream
+  var scrollTop =  window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+  for (var i = 0;i < items.length; i++) {
+||||||| merged common ancestors
+  for (var i = 0; i < items.length; i++) {
+    // var scrollTop =  window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+=======
+  for (var i = 0; i < items.length; i++) {
+    // var scrollTop =  window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+=======
   var items = document.querySelectorAll('.mover');
   var scrollTop =  window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 
   for (var i = 0;i < items.length; i++) {
+>>>>>>> origin/master
+>>>>>>> Stashed changes
     var phase = Math.sin((scrollTop / 1250) + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
@@ -530,8 +572,25 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
+<<<<<<< Updated upstream
   //电脑像素1600除以图片像素300乘以屏幕出现的行数3  为i的值  啊   还要考虑宽度
   for (var i = 0; i < 36; i++) {
+||||||| merged common ancestors
+  for (var i = 0; i < 50; i++) {
+=======
+<<<<<<< HEAD
+  //浏览器高度 758  图片  256  4行  每行6个  大约66个  已检查移动端  无显示问题
+
+// 太抱歉了  因为赶进度 毕业  都没做到位   不好意思  ！！！感谢  ！！！
+
+  for (var i = 0; i < 66; i++) {
+||||||| merged common ancestors
+  for (var i = 0; i < 50; i++) {
+=======
+  //电脑像素1600除以图片像素300乘以屏幕出现的行数3  为i的值  啊   还要考虑宽度
+  for (var i = 0; i < 36; i++) {
+>>>>>>> origin/master
+>>>>>>> Stashed changes
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
